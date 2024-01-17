@@ -1,13 +1,95 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*:focus {
+  outline: none;
+}
+
+.container {
+  background-color: skyblue;
+  height: 80vh;
+  width: 70%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 2rem;
+}
+
+.form {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input,
+.btn-register,
+.btn-login {
+  margin: 20px 0;
+  padding: 15px;
+  width: 70%;
+  border: none;
+}
+
+.input:active {
+  border: none;
+  outline: none;
+}
+
+.btn-login,
+.btn-register {
+  color: whitesmoke;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-register {
+  background-color: #dd9f5a;
+}
+
+.btn-register:hover {
+  background-color: #f5901d;
+}
+
+.btn-login {
+  background-color: #71e5ca;
+}
+
+.btn-login:hover {
+  background-color: #35d0ac;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(1, 1, 241);
+  font-weight: bold;
+  padding: 5px;
+}
+
+@media screen and (min-width: 990px) {
+  .input,
+  .btn-register {
+    margin: 20px 0;
+    padding: 15px;
+    border: none;
+  }
+
+  .container {
+    background-color: skyblue;
+    width: 30%;
+    margin: auto;
+    margin-top: 5%;
+  }
 }
